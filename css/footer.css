@@ -1,0 +1,14 @@
+div.plBtn{ 
+	display:block; 
+	width:100px;  
+	height:20px;
+	background-color:#ff0000;
+	color:#fff; 
+	position:fixed;
+	top:13%;
+	right:2%;
+	text-align:center;
+	padding:2px; 
+	text-decoration:none;
+	z-index:101;
+}

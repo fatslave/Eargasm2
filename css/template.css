@@ -1,0 +1,587 @@
+body {
+	font-size:16px; 
+	width:100%; 
+	height:100%; 
+	padding:30px 0px; 
+	background-color:black; 
+	overflow:hidden;
+	z-index:0;
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size:100% auto;
+}
+
+#bglayer {
+	height:100%;
+	width:99%;
+	background-color:brown;
+	filter:alpha(opacity=30);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.7);
+    opacity:.30;
+	position:fixed;
+	top:1%;
+	z-index:2;
+}
+#bg-magic{
+	height:100%;
+	width:100%;
+	position:fixed;
+	top:0%;
+	left:-1%;
+	overflow:hidden;
+	z-index:1;
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size:100% auto;
+}
+div.subheader-topwrapper {
+	position:fixed;
+	top:2%;
+	height:10%;
+	width:100%;
+	background:url("../images/bg.jpg");
+	margin-left:-1%;
+	overflow-y:hidden;
+	filter:alpha(opacity=50);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+    opacity:.50;
+		border-top:1px solid #ffa85d; 
+	border-bottom:1px solid #ffa85d; 
+	z-index:3;
+}
+#timeline {
+	position:fixed;
+	bottom:0px; 
+	right:22%;
+	color:red;
+	z-index:100;
+}	
+
+#bug {
+	position:fixed;
+	bottom:0px; 
+	right:10%
+	color:blue;
+	z-index:100;
+}	
+
+div.mid {
+position:relative;
+top:12%;
+width:100%;
+overflow-y:hidden;
+z-index:100;}
+
+	
+#sub-header {
+	position:absolute;
+	top:11%;
+	right:0%;
+	height:4%;
+	background-color: Red;
+	color: Green;
+	z-index:100;
+	text-align:right;
+	width:40%;
+	display:none;
+	
+	-moz-border-bottom-radius: 15px;
+	border-bottom-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+#tooltip {
+  position: absolute;
+  bottom:0;
+  float:left;
+  z-index:100;
+  display:block;
+  padding: 15px 0 0 0;
+  color: #993300;
+  text-align: center;
+  filter: alpha(opacity:90);
+  KHTMLOpacity: 0.90;
+  MozOpacity: 0.90;
+  opacity: 0.90;
+  
+}
+
+div.sheader {
+	position:fixed;
+	top:13%;
+	width:101%;
+	height:5%;
+	left:-1%;
+	background-color:#333;
+	filter:alpha(opacity=50);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+    opacity:.50;
+	z-index:100;
+	border-top:1px solid #ffa85d; 
+	border-bottom:1px solid #ffa85d; 
+}
+
+
+div.option {
+	position:fixed; 
+	top:13%; 
+	left:2%;
+	width :24px;
+	z-index:101;
+}
+
+#top-wrapper {
+	position:fixed;
+	top:2%;
+	height:10%;
+	width:101%;
+	z-index:100;
+}
+
+
+#lyrics{
+	position:fixed;
+	left:2%;
+	width:27%; 
+	height:80%; 
+	top:18%;
+	z-index:101; 
+	overflow-y:hidden;
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background: rgba(51, 51, 51, 0.4);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	color:white;
+	
+	display:none;
+}
+
+#discolist{
+	position:fixed;
+	left:2%;
+	width:27%; 
+	height:40%; 
+	top:59%;
+	z-index:101; 
+	overflow-y:hidden;
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background: rgba(51, 51, 51, 0.4);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	
+	
+	display:none;
+	
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	color:white;
+}
+
+
+#discolist ul li { list-style-type:none; }
+#discolist ul li:hover{ background-color:#ff0000; }
+
+#lyrics:hover {
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background: rgba(51, 51, 51, 0.7);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+#container {
+	position:fixed;
+	top:18%;
+	left:61%;
+    width: 39%;
+    height: 80%;
+	z-index:100; 
+	overflow-y:auto;
+	
+	display:none;
+	
+	
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background: rgba(51, 51, 51, 0.4);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;	
+	
+}
+
+div.box {
+    padding: 5px;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    background: #f3f3f3;
+    float: left;
+    margin: 10px;
+    border:1px solid #d3d3d3;
+    -moz-box-shadow: 2px 2px 5px #333;
+    -webkit-box-shadow: 2px 2px 5px #333;
+    box-shadow: 2px 2px 5px #333;
+    z-index: 101;
+}
+
+
+#top-wrapper-form	{
+	position:relative;
+	left:20%;
+	top:-10%;
+	width:70%;
+}
+
+#verify { position:absolute;left:28%;top:55%;color:white;}
+#shuffle { background:url(../images/shuffle.png) no-repeat center; position:fixed;top:14%; right:10%; width:24px; height:24px;z-index:101;}
+#save { background:url(../images/save.png) no-repeat center; position:fixed;top:14%; right:12%; width:24px; height:24px;z-index:101;}
+#reset { background:url(../images/reset.png) no-repeat center; position:fixed; top:14%; right:0; width:24px; height:24px; z-index:101;}
+#top-wrapper-input, textarea {  
+    padding: 2px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    width:130px;
+	color:white;
+	background:transparent;
+}  
+
+ 
+#top-wrapper  textarea:hover {  
+    border-color: blue;  
+}
+
+
+div.special {
+	position:fixed; 
+	z-index:101; 
+	top:11%; 
+	left:5%;
+	width:80%;
+}
+div.special  ul li{display: inline; list-style-type: none; padding-right:20px; height=30px;}
+div.special a{
+	height:30px;	
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	background-color:#ff0000;
+	color:white;
+	padding-right:20px;
+	padding-left:20px;
+}
+div.special a:hover	 { background-color:brown; cursor:pointer}	
+
+div.videoDiv{left:-10000;top:100%;visibility:hidden}
+
+
+
+
+div.radiolist {
+	width:150px;
+	position:absolute; 
+	top:18%; right:30%;
+	background-color:#333;
+	filter:alpha(opacity=50);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+    opacity:.50;
+	overflow-y:auto;
+	height:50%;
+	z-index:100;
+	display:none;
+	border-radius:6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	overflow:hidden;
+}
+
+div.radiolist ul{
+	list-style-type:none;
+	margin:0;
+	padding: 0;
+}
+	
+div.radiolist li{ color:white; text-align:center}	
+div.radiolist li:hover {background-color:white; color:#333}
+	
+div.langlist {
+	width:150px;
+	position:absolute; 
+	top:18%; right:42%;
+	background-color:#333;
+	filter:alpha(opacity=50);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+    opacity:.50;
+	overflow-y:auto;
+	z-index:100;
+	border-radius:6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	overflow:hidden;
+	display:none;
+}
+
+div.langlist ul{
+	list-style-type:none;
+	margin:0;
+	padding-top:10px;
+	padding-left:0px;
+}
+	
+div.langlist li{ color:white; text-align:center}	
+div.langlist li:hover {background-color:white; color:#333}
+
+
+#videos {
+	position:fixed;
+	left:30%;
+	width:30%; 
+	height:67%; 
+	top:18%;
+	z-index:101; 
+	display:none;
+	
+	overflow:hidden;
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background: rgba(51, 51, 51, 0.4);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	
+}
+	
+#videos ul {position:relative;list-style-type:none;width:100%;padding:0; margin-left:0px;color:white;}
+#videos li {position:relative;width:100%; margin-left:0;}
+
+
+
+
+#videos a.shareSongFb
+{
+	background:url(../images/share.png) no-repeat center;
+	display:block; 
+	position:relative; 
+	width:16px; 
+	height:16px;
+	float:right;
+	margin-right:5px;
+}
+
+#videos a.play {
+	background:url(../images/play.png) no-repeat center; 
+	display:block; 
+	width:22px; 
+	height:22px; 
+	position:relative;
+	float:left;
+}
+
+
+
+.vmenu{border:1px solid #aaa;position:absolute;background:#fff;	display:none;font-size:0.75em;}
+.vmenu .first_li {width:30px;display:block;padding:5px 10px;cursor:pointer}
+
+
+
+
+
+.TopArtists {
+	position:fixed;
+	left:2%;
+	width:95%; 
+	height:28%; 
+	top:20%;
+	z-index:101; 
+	
+	overflow-y:hidden;
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background: rgba(51, 51, 51, 0.4);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	
+	
+}
+
+
+.js-disabled img { width:150px; height:150px; display:block; float:left; top:0%; overflow:hidden;}  
+  
+#outerContainer { width:98%; top:5%; height:90%; margin:auto; position:relative; overflow:hidden;} 
+#imageScroller {position:relative; top:2%; width:100%; height:100%; background:rgba(51, 51, 51, 0.4) no-repeat; overflow:hidden; }  
+#viewer { width:100%; height:100%; overflow:hidden; margin:auto; position:relative; top:10px; }  
+#imageScroller a:active, #imageScroller a:visited { color:#000000; overflow:hidden;}  
+#imageScroller a img { border:0; overflow:hidden; overflow:hidden; }  
+#controls { width:534px; height:47px; background:url(../images/controlsBG.png) no-repeat; overflow:hidden; position:absolute; top:4px; left:4px; z-index:10;    }  
+#controls a { width:37px; height:35px; position:absolute; top:3px; overflow:hidden;}  
+#controls a:active, #controls a:visited { color:#0d0d0d; overflow:hidden;}  
+#title { color:#ffffff; font-family:arial; font-size:100%; font-weight:bold; overflow:hidden; width:100%; text-align:center; margin-top:10px; }  
+#rtl { background:url(../images/rtl.png) no-repeat; left:100px; overflow:hidden;}  
+#rtl:hover { background:url(../images/rtl_over.png) no-repeat; left:99px; overflow:hidden;}  
+#ltr { background:url(../images/ltr.png) no-repeat; rightright:100px; overflow:hidden;}  
+#ltr:hover { background:url(../images/ltr_over.png) no-repeat; overflow:hidden;}  
+
+
+
+
+#HeaderDisco { width:100%; top:0%; height:4%; position:relative; border-top: 1px solid rgb(255, 168, 93);
+border-bottom: 1px solid rgb(255, 168, 93);}
+
+.button-wrap{
+    position:relative;
+    left:80%;
+    top:2%;
+    width:20%;
+    z-index:101;
+}
+
+.authorize-button{
+    width:64px;
+    height:20px;
+    position:relative;
+    background-color:red;
+    color:white;
+    text-align:center;
+    padding:2px; 
+    z-index:101;
+}
+
+.authorize-button:hover {
+    background-color:blue;
+    color:white;
+}
+
+.authorize-button span{
+    height:20px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    color:yellow;
+
+}
+
+#myplaylists{
+    z-index:105;
+}
+
+.myplaylists{
+    position:relative;
+    left:81%;
+    top:2px;
+    width:150px;
+    height:100px;
+    background-color: black;
+    color:red;
+    z-index:250;
+    border-radius:5px;
+        -webkit-border-radius:5px;
+        -moz-border-radius:5px;
+}
+
+.myplaylists ul{
+    list-style-type:none;
+    margin:0;
+    padding-top:10px;
+    padding-left:0px;
+	width:150px;
+}
+
+.myplaylists ul li{
+float:left;
+    width:140px;
+}
+
+
+.myplaylists ul li:hover{
+    background-color:red;
+    color:white;
+}
+
+#logo img{
+    position:relative;
+    top:-30px;
+    left:0;
+    width:125px;
+    z-index: 102;
+}
+
+#sharePlaylists{
+	z-index:250;
+	float: right;
+	display:block;
+	background:url(../images/share.png) no-repeat center;
+}
+
+#descriptionofsite{ display:none;}
+
+.fb-login-button {position:fixed; top:2%; right:20%; z-index:103;}
+
+#PlaylistStartup{
+	position:fixed;
+	left:35%;
+	width:20%; 
+	height:38%; 
+	top:50%;
+	z-index:101; 
+	display:none;
+	overflow:hidden;
+	background: rgb(0, 0, 0);
+	background: rgba(51, 51, 51, 0.4);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";	
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;	
+	text-align:center;
+	color:white;
+}
+
+#titlePS {
+	background: Red;
+	color: White;
+}
+
+#selectedPS p:hover{
+	color:red;
+	background:Black;
+}
+
+
+.playPS{
+	background:url(../images/play.png) no-repeat center; 
+	display:block; 
+	width:22px; 
+	height:22px; 
+	position:relative;
+	float:left;
+}
